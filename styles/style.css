@@ -1,0 +1,80 @@
+body {
+	font-family: helvetica, sans-serif;
+	color: #545252;
+}
+
+#wrapper {
+	overflow: auto;
+	width: 60%;
+	height: 97%;
+	margin: 0 auto;
+	border: 3px solid lightgrey;
+	text-align: center;
+}
+
+header {
+	top: 0;
+	background-color: #545252;
+	color: white;
+	text-align: center;
+	font-weight: bold;
+	font-size: 4.3vw;
+	padding: 3% 0 3% 0;
+}
+
+.option-wrapper {
+	overflow: auto;
+	padding: 6% 0 7% 0;
+	border-bottom: 1.5px solid lightgrey;
+}
+
+.headline {
+	font-size: 3.8vw;
+}
+
+#time-helper-text {
+	font-size: 2vw;
+	color: grey;
+	text-align: left;
+	margin: 3% 5% 0 5%;
+}
+
+#location-helper-text {
+	font-size: 2vw;
+	color: grey;
+	text-align: left;
+	margin: 3% 5% 0 5%;
+}
+
+select {
+	width: 90%;
+	border: 1px solid grey;
+	padding: 2% 1% 2% 1%;
+	font-size: 4vw;
+	margin-top: 5%;
+}
+
+#ride-number {
+	border: 2px solid lightgrey;
+	border-radius: 7px;
+	text-align: center;
+	color: #545252;
+	font-size: 6vw;
+	width: 30%;
+	padding: 2% 0 2% 0;
+	margin-top: 3%;
+	resize: none;
+	outline: none;
+}
+
+footer {
+	background: #545252;
+	color: white;
+	padding: 4% 0 4% 0;
+	font-size: 4vw;
+}
+
+#fare-cost {
+	font-weight: bold;
+	font-size: 12vw;
+}

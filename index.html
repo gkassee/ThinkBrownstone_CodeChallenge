@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="./styles/style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="./javascripts/script.js"></script>
+	<title>Fare Calculator</title>
+</head>
+<body>
+
+	<div id="wrapper">
+
+		<header>Regional Rail Fares</header>
+
+		<!-- Zone Selection Drop Down -->
+		<div class="option-wrapper">
+				<span class="headline">Where are you going?</span>
+
+				<select id="zone-select">
+					<option value="1">Zone 1</option>
+					<option value="2">Zone 2</option>
+					<option value="3">Zone 3</option>
+					<option value="4">Zone 4</option>
+					<option value="5">Zone 5</option>
+				</select>
+		</div>
+
+		<!-- Time Selection Drop Down -->
+		<div class="option-wrapper">
+				<span class="headline">When are you riding?</span>
+
+				<select id="time-select">
+					<option value="weekday">Weekdays</option>
+					<option value="evening_weekend">Evening Weekends</option>
+					<option value="anytime">Anytime (10 Trip Package)</option>
+				</select>
+
+				<p id="time-helper-text"></p>
+		</div>
+
+		<!-- Purchase Location Drop Down -->
+		<div class="option-wrapper">
+				<span class="headline">Where will you purchase the fare?</span>
+
+				<form>
+					  <input type="radio" name="purchaseLocation" value="advance_purchase" id='atKiosk'> Station Kiosk<br>
+					  <input type="radio" name="purchaseLocation" value="onboard_purchase" id='atOnboard'> Onboard<br>
+				</form>
+
+				<p id="location-helper-text"></p>
+
+		</div>
+
+		<!-- Ride Number Input Box -->
+		<div class="option-wrapper">
+				<span class="headline">How many rides will you need?</span>
+				<br>
+				<input id="ride-number" placeholder="0"></input>
+		</div>
+
+		<!-- Display total purchase amount -->
+		<footer>
+			Your fare will cost<br>
+			<span id="fare-cost">$0.00</span>
+		</footer>
+
+
+	</div>
+
+</body>
+</html>
