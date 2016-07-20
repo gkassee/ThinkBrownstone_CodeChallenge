@@ -74,6 +74,7 @@ $(document).ready(function(){
 			url: "./javascripts/fares.json",
 			success: function(response){
 
+				// Updates helper info with relevant info based on the user's time selection
 				if (userTime == "anytime") {
 				document.getElementById('time-helper-text').innerHTML = response.info.anytime
 				} else if (userTime == "weekday") {
@@ -93,6 +94,7 @@ $(document).ready(function(){
 			url: "./javascripts/fares.json",
 			success: function(response){
 
+				// Updates helper info with relevant info based on the user's purchase location selection
 				if (userPL == "advance_purchase") {
 					document.getElementById('location-helper-text').innerHTML = response.info.advance_purchase
 				} else {
